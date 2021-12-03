@@ -1,0 +1,29 @@
+<svg class="portrait-view">
+  <defs>
+    <symbol id="clock-widget" class="clock-widget"
+    type="clock-widget" focusable="false" pointer-events="visible"
+    system-events="all" x="0" y="0" width="100%" height="100%" data-size="16" />
+  </defs>
+
+  <!-- clock widget -->
+  <use id="analog-watch-hands" href="#clock-widget">
+    <!-- clock background -->
+    <image class="analog-watch-background" href="bg.png" fill-opacity="1" />
+    <!-- clock hands -->
+    <g x="0" y="0" transform="translate(50%,50%)">
+      <g x="50%" y="50%" id="minute-hand">
+        <image x="$-174" y="$-125" width="348" height="250"
+        class="analog-watch-hand-minute" href="minute.png" fill="white"
+        />
+      </g>
+      <g x="50%" y="50%" id="hour-hand">
+        <image x="$-348" y="$-250" width="348" height="250"
+        class="analog-watch-hand-hour" href="hour.png" fill="white" />
+      </g>
+      <g x="50%" y="50%" id="second-hand">
+        <image x="$-348" y="$-250" width="348" height="250"
+        class="analog-watch-hand-hour" href="seconds.png" fill="white" />
+      </g>
+    </g>
+  </use>
+</svg>
